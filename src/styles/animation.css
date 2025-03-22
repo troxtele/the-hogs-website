@@ -1,0 +1,452 @@
+@reference "./input.css";
+
+.explore {
+  color: var(--color-primary-100);
+  animation: exploreColor 20s ease-in-out infinite;
+}
+
+@keyframes exploreColor {
+  0% {
+    color: var(--color-primary-100);
+  }
+  20% {
+    color: var(--color-primary-100);
+  }
+  25% {
+    color: #ffffff;
+  }
+  45% {
+    color: #ffffff;
+  }
+  50% {
+    color: var(--color-primary-100);
+  }
+  70% {
+    color: var(--color-primary-100);
+  }
+  75% {
+    color: #ffffff;
+  }
+  95% {
+    color: #ffffff;
+  }
+  100% {
+    color: var(--color-primary-100);
+  }
+}
+
+.join-discord {
+  border-color: #ffffff;
+  color: #ffffff;
+  animation: joinDiscordColor 20s ease-in-out infinite;
+}
+
+@keyframes joinDiscordColor {
+  0% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  20% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  25% {
+    border-color: var(--color-primary-500);
+    color: var(--color-primary-500);
+  }
+  45% {
+    border-color: var(--color-primary-500);
+    color: var(--color-primary-500);
+  }
+  50% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  70% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  75% {
+    border-color: var(--color-primary-500);
+    color: var(--color-primary-500);
+  }
+  95% {
+    border-color: var(--color-primary-500);
+    color: var(--color-primary-500);
+  }
+  100% {
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+}
+
+/* night */
+.night {
+  opacity: 1;
+  animation: nightOpacity 20s linear infinite;
+}
+
+@keyframes nightOpacity {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.night-star {
+  transform: translateX(-15);
+  opacity: 1;
+  animation: nightStarTransform 20s linear infinite;
+}
+
+@keyframes nightStarTransform {
+  0% {
+    opacity: 1;
+    transform: translateX(-15);
+  }
+  20% {
+    opacity: 1;
+    transform: translateX(-15);
+  }
+  25% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  95% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-15);
+  }
+}
+
+.moon {
+  top: 9%;
+  right: 15%;
+  animation: nightMoonFall 20s ease-in-out infinite;
+}
+
+@keyframes nightMoonFall {
+  0% {
+    top: 9%;
+    right: 15%;
+  }
+  20% {
+    top: 9%;
+    right: 15%;
+  }
+  25% {
+    top: 18%;
+    right: -13%;
+  }
+  95% {
+    top: 18%;
+    right: -13%;
+  }
+  100% {
+    top: 9%;
+    right: 15%;
+  }
+}
+
+/* day */
+.day {
+  opacity: 0;
+  animation: dayOpacity 20s linear infinite;
+}
+
+@keyframes dayOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.sun {
+  top: 18%;
+  left: -13%;
+  animation: daySunRise 20s ease-in-out infinite;
+}
+
+@keyframes daySunRise {
+  0% {
+    top: 18%;
+    left: -13%;
+  }
+  20% {
+    top: 18%;
+    left: -13%;
+  }
+  25% {
+    top: 9%;
+    left: 15%;
+  }
+  45% {
+    top: 9%;
+    left: 15%;
+  }
+  50% {
+    top: 18%;
+    left: -13%;
+  }
+  100% {
+    top: 18%;
+    left: -13%;
+  }
+}
+
+.glass {
+  opacity: 0;
+  animation: glassOpacity 20s ease-in-out infinite;
+}
+
+@keyframes glassOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.rainbow {
+  transform: rotate(180deg);
+  animation: rainbowRotate 20s ease-in-out infinite;
+}
+
+@keyframes rainbowRotate {
+  0% {
+    transform: rotate(180deg);
+  }
+  20% {
+    transform: rotate(180deg);
+  }
+  25% {
+    transform: rotate(0);
+  }
+  45% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-180deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+/* rain */
+.rainy {
+  opacity: 0;
+  animation: rainOpacity 20s linear infinite;
+}
+
+@keyframes rainOpacity {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cloud {
+  transform: translateY(-194px);
+  animation: cloudRotate 20s ease-in-out infinite;
+}
+
+@keyframes cloudRotate {
+  0% {
+    transform: translateY(-194px);
+  }
+  45% {
+    transform: translateY(-194px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  70% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-194px);
+  }
+  100% {
+    transform: translateY(-194px);
+  }
+}
+.rain {
+  opacity: 0;
+  animation: rainOpacity 20s linear infinite;
+}
+
+@keyframes rainOpacity {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.cap {
+  opacity: 0;
+  animation: capOpacity 20s ease-in-out infinite;
+}
+
+@keyframes capOpacity {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* snow */
+.snow {
+  opacity: 0;
+  animation: snowOpacity 20s linear infinite;
+}
+
+@keyframes snowOpacity {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.snowflake {
+  transform: translateY(-775px);
+  animation: snowfall 20s linear infinite;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translateY(-775px);
+  }
+  70% {
+    transform: translateY(-775px);
+  }
+  75% {
+    transform: translateY(0);
+  }
+  95% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-775px);
+  }
+}
+
+.snow-cap {
+  opacity: 0;
+  animation: snowCapOpacity 20s linear infinite;
+}
+
+@keyframes snowCapOpacity {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

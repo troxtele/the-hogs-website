@@ -1,0 +1,212 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "inter";
+  src: url("../assets/fonts/inter.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "michroma";
+  src: url("../assets/fonts/michroma.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "outfit";
+  src: url("../assets/fonts/outfit.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "prmntmrkr";
+  src: url("../assets/fonts/permanentMarker.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "sans";
+  src: url("../assets/fonts/dm-sans.ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme {
+  /* fonts */
+  --font-inter: "inter";
+  --font-michroma: "michroma";
+  --font-outfit: "outfit";
+  --font-prmntmrkr: "prmntmrkr";
+  --font-sans: "sans";
+
+  /* responsive breakpoints */
+  --breakpoint-exs: 375px;
+  --breakpoint-xs: 475px;
+
+  /* colors */
+  --color-gunsmoke-50: #f6f6f6;
+  --color-gunsmoke-100: #e7e7e7;
+  --color-gunsmoke-200: #d1d1d1;
+  --color-gunsmoke-300: #b0b0b0;
+  --color-gunsmoke-400: #888888;
+  --color-gunsmoke-500: #5d5d5d;
+  --color-gunsmoke-600: #4f4f4f;
+  --color-gunsmoke-700: #454545;
+  --color-gunsmoke-800: #3d3d3d;
+  --color-gunsmoke-900: #262626;
+  /* primary color pattern */
+  --color-primary-50: #fffaeb;
+  --color-primary-100: #fff0c6;
+  --color-primary-200: #fee189;
+  --color-primary-300: #fecb4b;
+  --color-primary-400: #fdb522;
+  --color-primary-500: #f79309;
+  --color-primary-600: #db6c04;
+  --color-primary-700: #b64a07;
+  --color-primary-800: #93390d;
+  --color-primary-900: #79300e;
+  --color-primary-950: #461702;
+  --color-primary-1000: #1a1310;
+}
+
+body {
+  @apply text-white bg-primary-1000 font-outfit text-base;
+}
+
+.container {
+  @apply max-w-[1320px] w-full mx-auto px-4 md:px-8;
+}
+
+.heading h2 {
+  @apply font-prmntmrkr text-3xl xs:text-4xl;
+}
+.heading p {
+  @apply text-gunsmoke-300 text-xl font-outfit max-w-[40rem] mx-auto;
+}
+.btn-gradient {
+  @apply bg-gradient-to-r from-primary-500 to-[#7A4824] rounded-full font-outfit font-black overflow-hidden relative before:absolute before:-left-full before:top-0 before:h-full before:w-full before:bg-gradient-to-r before:from-[#FEC24F] before:to-[#FE9735] hover:before:left-0 before:transition-all before:duration-500;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-primary-500 to-[#7A4824] rounded-full py-3 px-7 inline-flex gap-2 items-center font-outfit font-black cursor-pointer;
+}
+
+.btn-gradient span,
+.btn-primary span,
+.btn-primary svg,
+.btn-gradient svg {
+  @apply relative z-10;
+}
+
+/* header */
+.show {
+  @apply !visible !opacity-100;
+}
+.hide {
+  @apply !invisible !opacity-0;
+}
+.scrolled-down {
+  @apply -translate-y-1/2 opacity-0;
+}
+.scrolled-up {
+  @apply translate-y-0 opacity-100;
+}
+
+.desktop-nav {
+  box-shadow: inset 0px 0px 8px 0px rgba(255, 255, 255, 0.12),
+    0px 2px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+/* hog */
+.hog-wrapper .hog-up {
+  @apply translate-0 opacity-100 transition-all duration-300;
+}
+.hog-wrapper .hog-down {
+  @apply translate-y-full opacity-0 transition-all duration-300;
+}
+
+/* woks */
+.woks p {
+  @apply text-gunsmoke-300 font-outfit;
+}
+
+.toggle-btn.active .circle {
+  @apply left-5;
+}
+
+/* traits */
+.hog-traits-bottom button {
+  @apply opacity-60 cursor-pointer;
+}
+.active {
+  @apply !opacity-100;
+}
+
+.hogs-info .item {
+  @apply bg-black/25 rounded-xl p-5 space-y-2;
+}
+.hogs-info .item h5 {
+  @apply text-gunsmoke-200 text-lg;
+}
+.hogs-info .item h4 {
+  @apply font-semibold;
+}
+
+.swiper-pagination-bullet {
+  @apply w-20 h-20 rounded-full bg-transparent bg-gradient-to-r from-primary-500/2 to-[#7A4824]/2  opacity-50 flex items-end;
+}
+
+.swiper-pagination-bullet img {
+  @apply w-fit h-fit;
+}
+
+.swiper-pagination-bullet-active {
+  @apply opacity-100;
+}
+.swiper-button-prev,
+.swiper-button-next {
+  @apply bg-primary-600/20 backdrop-blur-sm w-10 h-10 text-lg rounded-full border border-primary-500/10 hover:border-primary-500/50 transition-all duration-300 top-1/7 xs:top-1/4 md:top-1/2;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply text-lg text-primary-200;
+}
+
+/* squad */
+.social a {
+  @apply flex items-center gap-2 hover:text-primary-400 transition-all duration-300;
+}
+.social a:hover path {
+  @apply fill-primary-400 transition-all duration-300;
+}
+
+/* brands */
+.brands input {
+  @apply border border-gunsmoke-300 rounded-full px-4 py-2.5 w-full text-white outline-none ring ring-transparent focus:border-amber-500 focus:ring-primary-500 transition-all duration-300 placeholder:text-gunsmoke-300;
+}
+
+/* Target the calendar icon in Webkit browsers (Chrome, Safari) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/* footer */
+footer ul {
+  @apply mt-4 space-y-2.5;
+}
+
+footer li a {
+  @apply text-gunsmoke-300 hover:text-primary-400 transition-all duration-300;
+}
+.social-links li a {
+  @apply flex items-center gap-2;
+}
+
+.social-links li a:hover path {
+  @apply fill-primary-400 transition-all duration-300;
+}
