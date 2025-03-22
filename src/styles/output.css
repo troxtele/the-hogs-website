@@ -326,6 +326,9 @@
   .left-1\/4 {
     left: calc(1/4 * 100%);
   }
+  .left-5 {
+    left: calc(var(--spacing) * 5);
+  }
   .left-\[3px\] {
     left: 3px;
   }
@@ -602,6 +605,10 @@
   }
   .-translate-x-1\/2 {
     --tw-translate-x: calc(calc(1/2 * 100%) * -1);
+    translate: var(--tw-translate-x) var(--tw-translate-y);
+  }
+  .translate-x-full {
+    --tw-translate-x: 100%;
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-1 {

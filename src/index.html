@@ -50,7 +50,73 @@
 >
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+
+    <!-- PNG format for various sizes -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <!-- Apple Touch Icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
+
+    <!-- Fallback Icons -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./assets/android-chrome-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="512x512"
+      href="./assets/android-chrome-512x512.png"
+    />
+
+    <!-- Android and Windows Tiles -->
+    <link rel="manifest" href="./assets/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta name="description" content="" />
+    <meta name="next-size-adjust" content="1" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="theHogs" />
+    <meta
+      property="og:description"
+      content="A brief description of your webpage content."
+    />
+    <meta property="og:image" content="https://www.yourwebsite.com/image.jpg" />
+    <meta
+      property="og:url"
+      content="https://www.yourwebsite.com/your-page-url"
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="theHogs" />
+    <meta
+      name="twitter:description"
+      content="A brief description of your webpage content."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.yourwebsite.com/image.jpg"
+    />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Hogs</title>
 
@@ -531,7 +597,18 @@
                     <div
                       class="x-logo bg-gunsmoke-900 h-[55px] w-[55px] grid place-content-center rounded-full"
                     >
-                      <img src="./assets/images/icons/x.svg" alt="X" />
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="22"
+                        height="21"
+                        viewBox="0 0 22 21"
+                        fill="none"
+                      >
+                        <path
+                          d="M17.3263 0.403931H20.6998L13.3297 8.82742L22 20.2899H15.2112L9.89404 13.338L3.80995 20.2899H0.434432L8.31743 11.28L0 0.403931H6.96111L11.7674 6.75826L17.3263 0.403931ZM16.1423 18.2707H18.0116L5.94539 2.31706H3.93946L16.1423 18.2707Z"
+                          fill="white"
+                        ></path>
+                      </svg>
                     </div>
 
                     <!-- info -->
@@ -623,10 +700,13 @@
                   >
                     <h5>Weather Data:</h5>
                     <div
+                      x-data="{ toggle: false }"
+                      @click="toggle = !toggle"
                       class="toggle-btn bg-primary-500 rounded-full w-[40px] h-[20px] relative"
                     >
                       <div
                         class="circle h-[16px] w-[16px] rounded-full bg-white absolute top-1/2 left-[3px] -translate-y-1/2 transition-all"
+                        :class="{ 'left-5': toggle }"
                       ></div>
                     </div>
                   </div>
@@ -698,7 +778,18 @@
                   class="top flex justify-between gap-2 pb-4 border-b border-gunsmoke-700"
                 >
                   <div class="left flex items-center gap-2">
-                    <img src="./assets/images/icons/x.svg" alt="X" />
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="21"
+                      viewBox="0 0 22 21"
+                      fill="none"
+                    >
+                      <path
+                        d="M17.3263 0.403931H20.6998L13.3297 8.82742L22 20.2899H15.2112L9.89404 13.338L3.80995 20.2899H0.434432L8.31743 11.28L0 0.403931H6.96111L11.7674 6.75826L17.3263 0.403931ZM16.1423 18.2707H18.0116L5.94539 2.31706H3.93946L16.1423 18.2707Z"
+                        fill="white"
+                      ></path>
+                    </svg>
                     <h4 class="text-xl font-semibold font-sans">
                       Auto-Updating PFP
                     </h4>
