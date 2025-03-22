@@ -1,13 +1,252 @@
 <!DOCTYPE html>
-<html lang="en" x-data="{
-  divScrollHeight: 0
-}">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <div class="hog h-[1000px]"></div>
-</body>
+<html
+  lang="en"
+  x-data="{ 
+    mobileMenuOpen: false, 
+    isNavButtonClicked: false,
+    scrollValue: 0, 
+    prevScrolled: 0,
+    isScrolledUp: false,
+    isScrolledDown: false
+  }"
+  x-init="
+    $watch('scrollValue', () => {
+      if (isNavButtonClicked) {
+        isScrolledUp = true;
+        isScrolledDown = false;
+        return;
+      }
+      
+      if (scrollValue > prevScrolled && scrollValue > 50) {
+        isScrolledUp = false;
+        isScrolledDown = true;
+      } else if (scrollValue < prevScrolled && scrollValue > 50) {
+        isScrolledUp = true;
+        isScrolledDown = false;
+      }
+       if (scrollValue <= 50) {
+        isScrolledUp = false;
+        isScrolledDown = false;
+      }
+      
+      prevScrolled = currentScroll;
+    })
+  "
+>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Alpine JS -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="./src/styles/swiper.min.css" />
+    <!-- Swiper JS -->
+    <script src="./src/scripts/swiper.min.js"></script>
+
+    <link rel="stylesheet" href="./src/styles/output.css" />
+    <link rel="stylesheet" href="./src/styles/animation.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+  </head>
+  <body @scroll.window="scrollValue = window.scrollY">
+    <header>
+      <!-- desktop nav -->
+      <div class="fixed left-0 right-0 top-0 z-50 mx-6">
+        <div
+          class="desktop-nav relative flex justify-between items-center gap-2 max-w-[1344px] py-2.5 px-5 rounded-2xl w-full mt-6 mx-auto backdrop-blur-lg border border-white/8 transition-all duration-300"
+          :class="{ 
+            'scrolled-up': isScrolledUp,
+            'scrolled-down': isScrolledDown
+          }"
+        >
+          <!-- desktop nav links -->
+          <nav class="desktop-nav-links hidden lg:inline">
+            <ul class="nav-links flex items-center gap-4">
+              <li>
+                <a
+                  href="#home"
+                  @click="isNavButtonClicked = true; setTimeout(() => isNavButtonClicked = false, 1000)"
+                  class="group relative flex items-center transition-colors duration-300 ease-in-out hover:text-primary-500"
+                >
+                  Home
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-primary-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#collction"
+                  @click="isNavButtonClicked = true; setTimeout(() => isNavButtonClicked = false, 1000)"
+                  class="group relative flex items-center transition-colors duration-300 ease-in-out hover:text-primary-500"
+                >
+                  Collection
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-primary-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  @click="isNavButtonClicked = true; setTimeout(() => isNavButtonClicked = false, 1000)"
+                  class="group relative flex items-center transition-colors duration-300 ease-in-out hover:text-primary-500"
+                >
+                  Features
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-primary-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#comunity"
+                  @click="isNavButtonClicked = true; setTimeout(() => isNavButtonClicked = false, 1000)"
+                  class="group relative flex items-center transition-colors duration-300 ease-in-out hover:text-primary-500"
+                >
+                  Comunity
+                  <span
+                    class="absolute inset-x-0 bottom-0 h-0.5 scale-x-0 transform bg-primary-500 transition-transform duration-300 ease-in-out group-hover:scale-x-100"
+                  />
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- icon -->
+          <img
+            class="logo max-w-[140px] lg:max-w-none lg:w-fit h-fit lg:absolute lg:left-1/2 top-0 lg:-translate-x-1/2"
+            src="./src/assets/logo.png"
+            alt="Logo"
+          />
+          <!-- wallet connect -->
+          <a
+            href="#"
+            class="btn-gradient py-3 px-7 hidden lg:inline-block wallet-connect"
+          >
+            <span>Connect Wallet</span>
+          </a>
+
+          <!-- menu button -->
+          <div
+            class="menu-btn lg:hidden rounded p-0.5"
+            @click="mobileMenuOpen = !mobileMenuOpen"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <g class="menu-outline">
+                <path
+                  fill="white"
+                  fill-rule="evenodd"
+                  d="M3 7a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1m0 5a1 1 0 0 1 1-1h16a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1"
+                  clip-rule="evenodd"
+                ></path>
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile nav -->
+      <div
+        class="z-50 mobile-nav fixed before:absolute before:inset-0 before:h-full before:w-full before:bg-primary-900/20 before:backdrop-blur-md inset-0 h-full w-full transition-all duration-300"
+        :class="{ 'show': mobileMenuOpen, 'hide': !mobileMenuOpen }"
+      >
+        <div
+          class="close-btn absolute h-full w-full"
+          @click="mobileMenuOpen = false"
+        >
+          <svg
+            class="bg-primary-500 p-1 absolute top-6 right-3 xs:top-4 xs:right-4 rounded-full text-primary-50 cursor-pointer"
+            aria-label="close navbar"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            width="28"
+            height="28"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M5 5L12 5L19 5M5 12H19M5 19L12 19L19 19"
+            >
+              <animate
+                fill="freeze"
+                attributeName="d"
+                dur="0.4s"
+                values="M5 5L12 5L19 5M5 12H19M5 19L12 19L19 19;M5 5L12 12L19 5M12 12H12M5 19L12 12L19 19"
+              ></animate>
+            </path>
+          </svg>
+        </div>
+
+        <div
+          class="mobile-content absolute w-[82vw] xs:w-[85vw] h-full overflow-y-auto transition-all duration-300 p-4 bg-primary-100 border-r border-primary-400/20 text-2xl"
+          :class="{ 'left-0': mobileMenuOpen, '-left-1/2': !mobileMenuOpen }"
+        >
+          <a href="#" class="logo flex gap-2 items-center px-2">
+            <img
+              loading="lazy"
+              class="w-full h-fit max-w-[250px]"
+              src="./src/assets/logo.png"
+              alt="logo"
+            />
+          </a>
+          <!-- links -->
+          <nav class="links mt-5">
+            <ul class="grid font-semibold text-primary-900 mb-10">
+              <li>
+                <a
+                  href="#home"
+                  @click="mobileMenuOpen = false"
+                  class="flex items-center transition-colors duration-300 ease-in-out bg-primary-600/5 border-b border-primary-600/20 py-3 px-2"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#collection"
+                  @click="mobileMenuOpen = false"
+                  class="flex items-center transition-colors duration-300 ease-in-out bg-primary-600/5 border-b border-primary-600/20 py-3 px-2"
+                >
+                  Collection
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#features"
+                  @click="mobileMenuOpen = false"
+                  class="flex items-center transition-colors duration-300 ease-in-out bg-primary-600/5 border-b border-primary-600/20 py-3 px-2"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#community"
+                  @click="mobileMenuOpen = false"
+                  class="flex items-center transition-colors duration-300 ease-in-out bg-primary-600/5 border-b border-primary-600/20 py-3 px-2"
+                >
+                  Community
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <div class="h-[1000px]"></div>
+  </body>
 </html>
