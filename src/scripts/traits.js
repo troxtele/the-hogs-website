@@ -15,12 +15,12 @@ const swiper = new Swiper(".swiper", {
     renderBullet: function (index, className) {
       // Array of image URLs for pagination (replace with your own image URLs)
       const images = [
-        "./src/assets/images/traits/hog-1.webp",
-        "./src/assets/images/traits/hog-2.webp",
-        "./src/assets/images/traits/hog-3.webp",
-        "./src/assets/images/traits/hog-4.webp",
-        "./src/assets/images/traits/hog-5.webp",
-        "./src/assets/images/traits/hog-6.webp",
+        "./assets/images/traits/hog-1.webp",
+        "./assets/images/traits/hog-2.webp",
+        "./assets/images/traits/hog-3.webp",
+        "./assets/images/traits/hog-4.webp",
+        "./assets/images/traits/hog-5.webp",
+        "./assets/images/traits/hog-6.webp",
       ];
       return `<div class="${className}">
       <img src="${images[index]}" alt="hog-${index + 1}">
