@@ -135,10 +135,6 @@ body {
   @apply text-gunsmoke-300 font-outfit;
 }
 
-.toggle-btn.active .circle {
-  @apply left-5;
-}
-
 /* traits */
 .hog-traits-bottom button {
   @apply opacity-60 cursor-pointer;
