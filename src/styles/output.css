@@ -836,6 +836,9 @@
   .max-w-\[250px\] {
     max-width: 250px;
   }
+  .max-w-\[263px\] {
+    max-width: 263px;
+  }
   .max-w-\[280px\] {
     max-width: 280px;
   }
@@ -1952,6 +1955,11 @@
   .lg\:w-fit {
     @media (width >= 64rem) {
       width: fit-content;
+    }
+  }
+  .lg\:max-w-\[263px\] {
+    @media (width >= 64rem) {
+      max-width: 263px;
     }
   }
   .lg\:max-w-none {
