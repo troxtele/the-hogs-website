@@ -450,131 +450,106 @@
     opacity: 0;
   }
 }
-
 /* squad hogs */
 
 /* one */
 .hog-1 {
-  opacity: 0;
   transform: translateY(100%);
-  animation: hogOnePopup 12s ease-in-out infinite;
+  animation: hogOnePopup 10s ease-in-out infinite;
 }
 
 @keyframes hogOnePopup {
   0% {
-    opacity: 0;
     transform: translateY(100%);
   }
-  4.17% {
-    opacity: 1;
+  2.5% {
     transform: translateY(0);
   }
-  20.84% {
-    opacity: 1;
+  22.5% {
     transform: translateY(0);
   }
   25% {
-    opacity: 0;
     transform: translateY(100%);
   }
   100% {
-    opacity: 0;
     transform: translateY(100%);
   }
 }
 /* two */
 .hog-4 {
-  opacity: 0;
   transform: translateY(100%);
-  animation: hogTwoPopup 12s ease-in-out infinite;
+  animation: hogTwoPopup 10s ease-in-out infinite;
 }
 
 @keyframes hogTwoPopup {
   0% {
-    opacity: 0;
     transform: translateY(100%);
   }
   25% {
-    opacity: 0;
     transform: translateY(100%);
   }
-  29.17% {
-    opacity: 1;
+  27.5% {
     transform: translateY(0);
   }
-  45.84% {
-    opacity: 1;
+  47.5% {
     transform: translateY(0);
   }
   50% {
-    opacity: 0;
     transform: translateY(100%);
   }
   100% {
-    opacity: 0;
     transform: translateY(100%);
   }
 }
 /* three */
 .hog-2 {
-  opacity: 0;
   transform: translateY(100%);
-  animation: hogThreePopup 12s ease-in-out infinite;
+  animation: hogThreePopup 10s ease-in-out infinite;
 }
 
 @keyframes hogThreePopup {
   0% {
-    opacity: 0;
     transform: translateY(100%);
   }
   50% {
-    opacity: 0;
     transform: translateY(100%);
   }
-  54.17% {
-    opacity: 1;
+  52.5% {
     transform: translateY(0);
   }
-  70.84% {
-    opacity: 1;
+  72.5% {
     transform: translateY(0);
   }
   75% {
-    opacity: 0;
     transform: translateY(100%);
   }
   100% {
-    opacity: 0;
     transform: translateY(100%);
   }
 }
 
 /* four */
 .hog-3 {
-  opacity: 0;
   transform: translateY(100%);
-  animation: hogFourPopup 12s ease-in-out infinite;
+  animation: hogFourPopup 10s ease-in-out infinite;
 }
 
 @keyframes hogFourPopup {
   0% {
-    opacity: 0;
     transform: translateY(100%);
   }
   75% {
-    opacity: 0;
     transform: translateY(100%);
   }
-  79.17% {
-    opacity: 1;
+  77.5% {
     transform: translateY(0);
   }
-  95.84% {
-    opacity: 1;
+  97.5% {
     transform: translateY(0);
   }
   100% {
-    opacity: 0;
     transform: translateY(100%);
   }
 }
+
+
