@@ -122,6 +122,17 @@ body {
     0px 2px 4px 0px rgba(0, 0, 0, 0.16);
 }
 
+/* hero */
+.hero-behind-bg {
+  display: none;
+}
+
+@media screen and (min-width: 1680px) {
+  .hero-behind-bg {
+    display: block;
+  }
+}
+
 /* hog */
 .hog-wrapper .hog-up {
   @apply translate-0 opacity-100 transition-all duration-300;

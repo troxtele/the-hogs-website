@@ -338,6 +338,100 @@
     <!-- hero -->
     <main id="hero" class="hero relative overflow-hidden">
       <div
+        class="hero-behind-bg w-full h-[1300px] absolute top-0 left-0 right-0 after:absolute after:w-full after:h-full after:inset-0 after:backdrop-blur-xl"
+      >
+        <!-- night -->
+        <div class="night absolute inset-0 w-full h-full">
+          <img
+            class="night-bg max-h-[1032px] w-full h-full absolute inset-0"
+            src="./assets/images/hero/night-bg.webp"
+            alt="bg"
+          />
+        </div>
+        <!-- day -->
+        <div class="day absolute inset-0 h-full">
+          <img
+            class="day-bg w-full max-h-[1032px] h-full absolute inset-0"
+            src="./assets/images/hero/day-bg.webp"
+            alt="bg"
+          />
+
+          <!-- rainbow -->
+          <img
+            class="rainbox-bg absolute w-full mx-auto left-[20%] md:left-[300px] lg:left-[391px] h-fit max-w-[1680px]"
+            src="./assets/images/hero/rainbow.webp"
+            alt="rainbow"
+          />
+
+          <!-- mountain -->
+          <img
+            class="h-[356px] w-full absolute top-[578px]"
+            src="./assets/images/hero/day-mountain.webp"
+            alt="Mountain"
+          />
+
+          <img
+            class="sun absolute h-[290px] w-[290px]"
+            src="./assets/images/hero/sun.svg"
+            alt="sun"
+          />
+        </div>
+
+        <!-- rainy -->
+        <div class="rainy absolute inset-0 w-full h-full">
+          <img
+            class="rain-bg w-full max-h-[1032px] h-full absolute inset-0"
+            src="./assets/images/hero/rain-bg.webp"
+            alt="bg"
+          />
+
+          <!-- cloud -->
+          <img
+            class="cloud absolute w-full max-h-[194px] h-full left-0 top-0"
+            src="./assets/images/hero/cloud.webp"
+            alt="cloud"
+          />
+
+          <!-- rain -->
+          <img
+            class="rain absolute w-full max-w-[1680px] max-h-[1072px] h-full left-0 top-0"
+            src="./assets/images/hero/rain.webp"
+            alt="rain"
+          />
+        </div>
+
+        <!-- front -->
+        <div class="front-bg">
+          <img
+            class="front w-full absolute inset-0 h-full"
+            src="./assets/images/hero/front.webp"
+            alt="front"
+          />
+        </div>
+
+        <!-- snow -->
+        <div class="snow absolute inset-0 w-full h-full">
+          <img
+            class="snow-bg w-full max-h-[1032px] h-full absolute inset-0"
+            src="./assets/images/hero/snow-bg.webp"
+            alt="bg"
+          />
+          <img
+            class="snowflake absolute inset-0 w-full h-full max-h-[755px]"
+            src="./assets/images/hero/snow.webp"
+            alt="Snow"
+          />
+          <!-- snow front -->
+          <div class="front-bg">
+            <img
+              class="front absolute inset-0 h-full w-full"
+              src="./assets/images/hero/snow-front.webp"
+              alt="front"
+            />
+          </div>
+        </div>
+      </div>
+      <div
         class="hero-wrapper min-h-[1165px] max-w-[1680px] mx-auto w-full relative overflow-hidden"
       >
         <div class="all-bg">
@@ -1500,227 +1594,245 @@
     </section>
 
     <!-- squad -->
-    <section
-      id="squad"
-      class="squad py-16 h-[900px] max-w-[1680px] mx-auto bg-center bg-cover relative overflow-hidden"
-      style="background-image: url('./assets/images/squad/background.webp')"
-    >
+    <section id="squad" class="squad relative">
+      <!-- background -->
       <div
-        class="absolute top-0 left-0 right-0 bottom-1/2 bg-gradient-to-b from-[#0D0A08]/100 to-[#0D0A08]/0"
-      ></div>
-      <!-- hogs -->
-      <div
-        class="hogs absolute -right-[40%] exs:-right-[30%] xs:-right-[10%] sm:-right-[5%] md:right-[5%] lg:right-[12%] xl:right-[15%] 2xl:right-[23%] -bottom-5 md:bottom-0 w-[662px] h-[368px] scale-65 sm:scale-75 md:scale-90 lg:scale-100"
+        class="bg absolute inset-0 after:absolute after:inset-0 after:w-full after:h-full after:backdrop-blur-2xl"
       >
-        <!-- hog 4 -->
-        <div class="hog-wrapper absolute scale-25 -left-[40px] top-[90px]">
-          <!-- hole -->
-          <img
-            class="hole min-w-[461px] h-fit"
-            src="./assets/images/hero/hole.webp"
-            alt="Hole"
-          />
-          <div
-            class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
-          >
-            <img
-              class="hog-4 w-[290px] h-fit"
-              src="./assets/images/squad/head-hog.webp"
-              alt="Hog"
-            />
-          </div>
-          <img
-            class="hole h-fit absolute bottom-0 left-[1px]"
-            src="./assets/images/hero/half-hole.webp"
-            alt="Hole"
-          />
-        </div>
-        <!-- hog 3 -->
-        <div class="hog-wrapper absolute scale-37 left-[65px] top-[145px]">
-          <!-- hole -->
-          <img
-            class="hole min-w-[461px] h-fit"
-            src="./assets/images/hero/hole.webp"
-            alt="Hole"
-          />
-          <div
-            class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
-          >
-            <img
-              class="hog-3 w-[290px] h-fit"
-              src="./assets/images/squad/head-hog.webp"
-              alt="Hog"
-            />
-          </div>
-          <img
-            class="hole h-fit absolute bottom-0 left-[1px]"
-            src="./assets/images/hero/half-hole.webp"
-            alt="Hole"
-          />
-        </div>
-        <!-- hog 2 -->
-        <div class="hog-wrapper absolute bottom-[30px] -left-[120px] scale-52">
-          <!-- hole -->
-          <img
-            class="hole min-w-[461px] h-fit"
-            src="./assets/images/hero/hole.webp"
-            alt="Hole"
-          />
-          <div
-            class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
-          >
-            <img
-              class="hog-2 w-[290px] h-fit"
-              src="./assets/images/squad/head-hog.webp"
-              alt="Hog"
-            />
-          </div>
-          <img
-            class="hole h-fit absolute bottom-0 left-[1px]"
-            src="./assets/images/hero/half-hole.webp"
-            alt="Hole"
-          />
-        </div>
-        <!-- hog 1 -->
-        <div class="hog-wrapper absolute bottom-[10px] -right-[50px] scale-80">
-          <!-- hole -->
-          <img
-            class="hole min-w-[461px] h-fit"
-            src="./assets/images/hero/hole.webp"
-            alt="Hole"
-          />
-          <div
-            class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
-          >
-            <img
-              class="hog-1 w-[290px] h-fit"
-              src="./assets/images/squad/head-hog.webp"
-              alt="Hog"
-            />
-          </div>
-          <img
-            class="hole h-fit absolute bottom-0 left-[1px]"
-            src="./assets/images/hero/half-hole.webp"
-            alt="Hole"
-          />
-        </div>
+        <div
+          class="absolute top-0 left-0 right-0 bottom-1/2 bg-gradient-to-b from-[#0D0A08]/100 to-[#0D0A08]/0"
+        ></div>
+        <img
+          class="h-full w-full"
+          src="./assets/images/squad/background.webp"
+          alt=""
+        />
       </div>
-      <div class="container h-full">
-        <div class="wrapper relative flex flex-col justify-center h-full">
-          <div class="heading">
-            <h2 class="drop-shadow-[0_4px_4px_rgba(0,0,0,1)]">
-              Join the Hog <span class="text-primary-500">Squad</span>
-            </h2>
-          </div>
-
-          <!-- content -->
-          <div class="content max-w-[658px] w-full space-y-6 mt-10 md:mt-14">
+      <div
+        class="py-16 h-[900px] max-w-[1680px] mx-auto bg-center bg-cover relative overflow-hidden"
+        style="background-image: url('./assets/images/squad/background.webp')"
+      >
+        <div
+          class="absolute top-0 left-0 right-0 bottom-1/2 bg-gradient-to-b from-[#0D0A08]/100 to-[#0D0A08]/0"
+        ></div>
+        <!-- hogs -->
+        <div
+          class="hogs absolute -right-[40%] exs:-right-[30%] xs:-right-[10%] sm:-right-[5%] md:right-[5%] lg:right-[12%] xl:right-[15%] 2xl:right-[23%] -bottom-5 md:bottom-0 w-[662px] h-[368px] scale-65 sm:scale-75 md:scale-90 lg:scale-100"
+        >
+          <!-- hog 4 -->
+          <div class="hog-wrapper absolute scale-25 -left-[40px] top-[90px]">
+            <!-- hole -->
+            <img
+              class="hole min-w-[461px] h-fit"
+              src="./assets/images/hero/hole.webp"
+              alt="Hole"
+            />
             <div
-              class="whack bg-black/24 backdrop-blur-md rounded-2xl p-6 space-y-5 md:space-y-8"
+              class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
             >
-              <h3
-                class="text-3xl xs:text-4xl sm:text-5xl lg:text-[64px] font-prmntmrkr"
-              >
-                Whack-a-Hog 🔨
-              </h3>
-              <p class="text-xl sm:text-2xl font-medium">
-                Test your reflexes with our community game! High scores get
-                access to our Discord and special airdrops.
-              </p>
-              <a
-                href="#"
-                class="btn-primary btn-gradient mt-2 font-extrabold text-2xl"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="26"
-                  height="26"
-                  viewBox="0 0 26 26"
-                  fill="none"
-                >
-                  <path
-                    d="M18.5404 12.8202V12.8202C18.5405 13.0283 18.4901 13.2333 18.3935 13.4176C18.297 13.602 18.1572 13.7601 17.9861 13.8786L18.0352 13.9496L17.9861 13.8786L12.0118 18.0146C11.8187 18.1483 11.5927 18.2266 11.3583 18.241C11.1239 18.2554 10.89 18.2053 10.682 18.0963C10.474 17.9873 10.2998 17.8234 10.1783 17.6224C10.0568 17.4215 9.99258 17.1911 9.99264 16.9563V8.68417V8.68414C9.99258 8.4493 10.0568 8.21891 10.1783 8.01795C10.2998 7.81699 10.474 7.65312 10.682 7.54409C10.89 7.43507 11.1239 7.38504 11.3583 7.39944C11.5927 7.41384 11.8187 7.49211 12.0118 7.62578L17.9861 11.7618L18.0384 11.6862L17.9861 11.7618C18.1572 11.8802 18.297 12.0384 18.3935 12.2227C18.4901 12.4071 18.5405 12.6121 18.5404 12.8202ZM22.8603 12.8203V12.8202C22.8603 10.8933 22.2889 9.00964 21.2184 7.40747C20.1478 5.8053 18.6262 4.55656 16.846 3.81917C15.0658 3.08177 13.1068 2.88883 11.2169 3.26475C9.32706 3.64067 7.59108 4.56857 6.22855 5.93111C4.86602 7.29364 3.93812 9.02961 3.5622 10.9195C3.18628 12.8094 3.37921 14.7683 4.11661 16.5485C4.85401 18.3288 6.10275 19.8504 7.70492 20.9209C9.30709 21.9914 11.1907 22.5628 13.1176 22.5628L13.1177 22.5628C15.7008 22.5601 18.1772 21.5327 20.0037 19.7063C21.8302 17.8798 22.8575 15.4033 22.8603 12.8203ZM25.4338 12.8203C25.4338 15.2562 24.7115 17.6373 23.3582 19.6627C22.0049 21.6881 20.0813 23.2667 17.8308 24.1989C15.5804 25.131 13.104 25.3749 10.7149 24.8997C8.32577 24.4245 6.13124 23.2515 4.40879 21.529C2.68634 19.8066 1.51334 17.6121 1.03812 15.223C0.562896 12.8339 0.806797 10.3575 1.73898 8.107C2.67116 5.85651 4.24976 3.93299 6.27514 2.57967C8.30051 1.22636 10.6817 0.504031 13.1176 0.504021C16.3829 0.507657 19.5135 1.80642 21.8225 4.11538C24.1314 6.42434 25.4302 9.55493 25.4338 12.8203Z"
-                    fill="white"
-                    stroke="white"
-                    stroke-width="0.183824"
-                  ></path>
-                </svg>
-                <span>Play Now</span></a
-              >
+              <img
+                class="hog-4 w-[290px] h-fit"
+                src="./assets/images/squad/head-hog.webp"
+                alt="Hog"
+              />
             </div>
-            <!-- connect -->
+            <img
+              class="hole h-fit absolute bottom-0 left-[1px]"
+              src="./assets/images/hero/half-hole.webp"
+              alt="Hole"
+            />
+          </div>
+          <!-- hog 3 -->
+          <div class="hog-wrapper absolute scale-37 left-[65px] top-[145px]">
+            <!-- hole -->
+            <img
+              class="hole min-w-[461px] h-fit"
+              src="./assets/images/hero/hole.webp"
+              alt="Hole"
+            />
             <div
-              class="connect bg-black/24 backdrop-blur-md rounded-2xl p-6 sm:p-8 space-y-8"
+              class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
             >
-              <h5 class="text-2xl text-center">Connect with Hogs Lover</h5>
+              <img
+                class="hog-3 w-[290px] h-fit"
+                src="./assets/images/squad/head-hog.webp"
+                alt="Hog"
+              />
+            </div>
+            <img
+              class="hole h-fit absolute bottom-0 left-[1px]"
+              src="./assets/images/hero/half-hole.webp"
+              alt="Hole"
+            />
+          </div>
+          <!-- hog 2 -->
+          <div
+            class="hog-wrapper absolute bottom-[30px] -left-[120px] scale-52"
+          >
+            <!-- hole -->
+            <img
+              class="hole min-w-[461px] h-fit"
+              src="./assets/images/hero/hole.webp"
+              alt="Hole"
+            />
+            <div
+              class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
+            >
+              <img
+                class="hog-2 w-[290px] h-fit"
+                src="./assets/images/squad/head-hog.webp"
+                alt="Hog"
+              />
+            </div>
+            <img
+              class="hole h-fit absolute bottom-0 left-[1px]"
+              src="./assets/images/hero/half-hole.webp"
+              alt="Hole"
+            />
+          </div>
+          <!-- hog 1 -->
+          <div
+            class="hog-wrapper absolute bottom-[10px] -right-[50px] scale-80"
+          >
+            <!-- hole -->
+            <img
+              class="hole min-w-[461px] h-fit"
+              src="./assets/images/hero/hole.webp"
+              alt="Hole"
+            />
+            <div
+              class="overflow-hidden flex items-end absolute left-[78px] bottom-[40px] w-full"
+            >
+              <img
+                class="hog-1 w-[290px] h-fit"
+                src="./assets/images/squad/head-hog.webp"
+                alt="Hog"
+              />
+            </div>
+            <img
+              class="hole h-fit absolute bottom-0 left-[1px]"
+              src="./assets/images/hero/half-hole.webp"
+              alt="Hole"
+            />
+          </div>
+        </div>
+        <div class="container h-full">
+          <div class="wrapper relative flex flex-col justify-center h-full">
+            <div class="heading">
+              <h2 class="drop-shadow-[0_4px_4px_rgba(0,0,0,1)]">
+                Join the Hog <span class="text-primary-500">Squad</span>
+              </h2>
+            </div>
 
-              <!-- social links -->
+            <!-- content -->
+            <div class="content max-w-[658px] w-full space-y-6 mt-10 md:mt-14">
               <div
-                class="social flex flex-wrap justify-center sm:justify-around gap-4 mt-4 text-xl"
+                class="whack bg-black/24 backdrop-blur-md rounded-2xl p-6 space-y-5 md:space-y-8"
               >
-                <!-- x -->
-                <a href="#" id="x">
+                <h3
+                  class="text-3xl xs:text-4xl sm:text-5xl lg:text-[64px] font-prmntmrkr"
+                >
+                  Whack-a-Hog 🔨
+                </h3>
+                <p class="text-xl sm:text-2xl font-medium">
+                  Test your reflexes with our community game! High scores get
+                  access to our Discord and special airdrops.
+                </p>
+                <a
+                  href="#"
+                  class="btn-primary btn-gradient mt-2 font-extrabold text-2xl"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
-                    width="31"
-                    height="27"
-                    viewBox="0 0 31 27"
+                    width="26"
+                    height="26"
+                    viewBox="0 0 26 26"
                     fill="none"
                   >
                     <path
-                      d="M23.9351 0.0644531H28.433L18.6063 11.2958L30.1667 26.5791H21.115L14.0254 17.3098L5.91327 26.5791H1.41259L11.9233 14.5659L0.833344 0.0644531H10.1148L16.5232 8.5369L23.9351 0.0644531ZM22.3564 23.8868H24.8488L8.76054 2.6153H6.08596L22.3564 23.8868Z"
+                      d="M18.5404 12.8202V12.8202C18.5405 13.0283 18.4901 13.2333 18.3935 13.4176C18.297 13.602 18.1572 13.7601 17.9861 13.8786L18.0352 13.9496L17.9861 13.8786L12.0118 18.0146C11.8187 18.1483 11.5927 18.2266 11.3583 18.241C11.1239 18.2554 10.89 18.2053 10.682 18.0963C10.474 17.9873 10.2998 17.8234 10.1783 17.6224C10.0568 17.4215 9.99258 17.1911 9.99264 16.9563V8.68417V8.68414C9.99258 8.4493 10.0568 8.21891 10.1783 8.01795C10.2998 7.81699 10.474 7.65312 10.682 7.54409C10.89 7.43507 11.1239 7.38504 11.3583 7.39944C11.5927 7.41384 11.8187 7.49211 12.0118 7.62578L17.9861 11.7618L18.0384 11.6862L17.9861 11.7618C18.1572 11.8802 18.297 12.0384 18.3935 12.2227C18.4901 12.4071 18.5405 12.6121 18.5404 12.8202ZM22.8603 12.8203V12.8202C22.8603 10.8933 22.2889 9.00964 21.2184 7.40747C20.1478 5.8053 18.6262 4.55656 16.846 3.81917C15.0658 3.08177 13.1068 2.88883 11.2169 3.26475C9.32706 3.64067 7.59108 4.56857 6.22855 5.93111C4.86602 7.29364 3.93812 9.02961 3.5622 10.9195C3.18628 12.8094 3.37921 14.7683 4.11661 16.5485C4.85401 18.3288 6.10275 19.8504 7.70492 20.9209C9.30709 21.9914 11.1907 22.5628 13.1176 22.5628L13.1177 22.5628C15.7008 22.5601 18.1772 21.5327 20.0037 19.7063C21.8302 17.8798 22.8575 15.4033 22.8603 12.8203ZM25.4338 12.8203C25.4338 15.2562 24.7115 17.6373 23.3582 19.6627C22.0049 21.6881 20.0813 23.2667 17.8308 24.1989C15.5804 25.131 13.104 25.3749 10.7149 24.8997C8.32577 24.4245 6.13124 23.2515 4.40879 21.529C2.68634 19.8066 1.51334 17.6121 1.03812 15.223C0.562896 12.8339 0.806797 10.3575 1.73898 8.107C2.67116 5.85651 4.24976 3.93299 6.27514 2.57967C8.30051 1.22636 10.6817 0.504031 13.1176 0.504021C16.3829 0.507657 19.5135 1.80642 21.8225 4.11538C24.1314 6.42434 25.4302 9.55493 25.4338 12.8203Z"
                       fill="white"
+                      stroke="white"
+                      stroke-width="0.183824"
                     ></path>
                   </svg>
+                  <span>Play Now</span></a
+                >
+              </div>
+              <!-- connect -->
+              <div
+                class="connect bg-black/24 backdrop-blur-md rounded-2xl p-6 sm:p-8 space-y-8"
+              >
+                <h5 class="text-2xl text-center">Connect with Hogs Lover</h5>
 
-                  <span>Twitter</span>
-                </a>
-                <!-- discord -->
-                <a href="#" id="discord">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="33"
-                    height="25"
-                    viewBox="0 0 33 25"
-                    fill="none"
-                  >
-                    <path
-                      d="M27.5894 2.06681C25.5498 1.13096 23.3626 0.441476 21.0759 0.0465784C21.0342 0.038957 20.9926 0.0580033 20.9712 0.0960968C20.6899 0.596383 20.3783 1.24905 20.1601 1.76204C17.7005 1.39381 15.2536 1.39381 12.8444 1.76204C12.6262 1.23765 12.3033 0.596383 12.0208 0.0960968C11.9993 0.0592743 11.9577 0.040228 11.9161 0.0465784C9.63055 0.440214 7.44341 1.1297 5.40258 2.06681C5.38491 2.07442 5.36977 2.08713 5.35972 2.10363C1.21119 8.30144 0.074733 14.3469 0.63224 20.3174C0.634763 20.3466 0.65116 20.3746 0.673864 20.3923C3.41095 22.4024 6.06228 23.6227 8.66437 24.4315C8.70602 24.4442 8.75014 24.429 8.77664 24.3947C9.39217 23.5541 9.94086 22.6678 10.4113 21.7358C10.4391 21.6812 10.4126 21.6164 10.3558 21.5948C9.48551 21.2647 8.6568 20.8622 7.85964 20.4051C7.79659 20.3682 7.79154 20.2781 7.84954 20.2349C8.0173 20.1092 8.18509 19.9784 8.34527 19.8463C8.37425 19.8222 8.41464 19.8171 8.44871 19.8324C13.6857 22.2234 19.3554 22.2234 24.5306 19.8324C24.5647 19.8159 24.6051 19.8209 24.6353 19.8451C24.7955 19.9771 24.9633 20.1092 25.1323 20.2349C25.1903 20.2781 25.1865 20.3682 25.1235 20.4051C24.3263 20.871 23.4976 21.2647 22.626 21.5936C22.5693 21.6152 22.544 21.6812 22.5718 21.7358C23.0523 22.6665 23.601 23.5528 24.2052 24.3934C24.2304 24.429 24.2758 24.4442 24.3175 24.4315C26.9322 23.6227 29.5835 22.4024 32.3206 20.3923C32.3446 20.3746 32.3597 20.3479 32.3622 20.3187C33.0294 13.4161 31.2447 7.42023 27.631 2.10489C27.6221 2.08713 27.607 2.07442 27.5894 2.06681ZM11.1934 16.682C9.61666 16.682 8.31751 15.2345 8.31751 13.4568C8.31751 11.6791 9.59147 10.2315 11.1934 10.2315C12.8078 10.2315 14.0944 11.6918 14.0692 13.4568C14.0692 15.2345 12.7952 16.682 11.1934 16.682ZM21.8263 16.682C20.2497 16.682 18.9505 15.2345 18.9505 13.4568C18.9505 11.6791 20.2244 10.2315 21.8263 10.2315C23.4408 10.2315 24.7274 11.6918 24.7022 13.4568C24.7022 15.2345 23.4408 16.682 21.8263 16.682Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                <!-- social links -->
+                <div
+                  class="social flex flex-wrap justify-center sm:justify-around gap-4 mt-4 text-xl"
+                >
+                  <!-- x -->
+                  <a href="#" id="x">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="31"
+                      height="27"
+                      viewBox="0 0 31 27"
+                      fill="none"
+                    >
+                      <path
+                        d="M23.9351 0.0644531H28.433L18.6063 11.2958L30.1667 26.5791H21.115L14.0254 17.3098L5.91327 26.5791H1.41259L11.9233 14.5659L0.833344 0.0644531H10.1148L16.5232 8.5369L23.9351 0.0644531ZM22.3564 23.8868H24.8488L8.76054 2.6153H6.08596L22.3564 23.8868Z"
+                        fill="white"
+                      ></path>
+                    </svg>
 
-                  <span>Discord</span>
-                </a>
-                <!-- instagram -->
-                <a href="#" id="instagram">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="33"
-                    height="33"
-                    viewBox="0 0 33 33"
-                    fill="none"
-                  >
-                    <path
-                      d="M25.0269 9.88871C23.9673 9.89078 23.1057 9.03282 23.1037 7.97319C23.1016 6.91356 23.9596 6.05197 25.0197 6.0499C26.0798 6.04783 26.9414 6.9063 26.9435 7.96593C26.945 9.02556 26.087 9.88664 25.0269 9.88871Z"
-                      fill="white"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.5153 24.7406C11.9788 24.7494 8.29347 21.0791 8.28467 16.5414C8.27584 12.0048 11.9471 8.31896 16.4837 8.31015C21.0212 8.30134 24.7071 11.9737 24.7159 16.5098C24.7247 21.0474 21.0523 24.7317 16.5153 24.7406ZM16.4894 11.193C13.5449 11.1982 11.1613 13.5907 11.1664 16.5357C11.1721 19.4813 13.5651 21.8644 16.5096 21.8587C19.4552 21.853 21.8388 19.4611 21.8331 16.5155C21.8274 13.5699 19.4344 11.1873 16.4894 11.193Z"
-                      fill="white"
-                    ></path>
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M5.99227 1.38785C7.00835 0.989713 8.17111 0.717029 9.87354 0.636677C11.5801 0.554776 12.125 0.536107 16.4692 0.527816C20.8144 0.519525 21.3592 0.536104 23.0658 0.61179C24.7688 0.685403 25.9321 0.953944 26.9502 1.34794C28.0036 1.75384 28.8973 2.30025 29.7879 3.18725C30.6786 4.07527 31.227 4.96591 31.6381 6.01775C32.0357 7.03487 32.3084 8.19662 32.3893 9.90011C32.4701 11.6062 32.4898 12.1505 32.4981 16.4953C32.5064 20.8395 32.4888 21.3849 32.4141 23.0925C32.34 24.7945 32.072 25.9583 31.678 26.9759C31.2711 28.0293 30.7257 28.9231 29.8387 29.8137C28.9517 30.7048 28.0601 31.2528 27.0083 31.6644C25.9911 32.0615 24.8294 32.3342 23.127 32.4156C21.4204 32.4965 20.8756 32.5156 16.5298 32.5239C12.1861 32.5322 11.6413 32.5156 9.93473 32.4405C8.23177 32.3658 7.06796 32.0978 6.05033 31.7043C4.99695 31.2969 4.10323 30.752 3.21261 29.8645C2.32148 28.977 1.77251 28.0858 1.36194 27.034C0.96381 26.0174 0.692143 24.8551 0.610764 23.1532C0.529381 21.4461 0.510207 20.9007 0.501919 16.5565C0.493599 12.2117 0.510716 11.6674 0.585356 9.96075C0.660533 8.25728 0.927516 7.09396 1.32151 6.07529C1.72844 5.0224 2.27379 4.12919 3.16182 3.23805C4.04881 2.34743 4.94044 1.7979 5.99227 1.38785ZM7.08872 29.0164C7.65325 29.2336 8.5003 29.4928 10.0602 29.5607C11.7481 29.6338 12.2535 29.6499 16.5246 29.6416C20.7973 29.6338 21.3028 29.6157 22.9901 29.5363C24.5485 29.4622 25.3955 29.1999 25.9585 28.9801C26.7055 28.6882 27.2374 28.3393 27.7962 27.78C28.355 27.2185 28.7008 26.6851 28.9901 25.9381C29.2078 25.373 29.4665 24.5254 29.5344 22.9655C29.6086 21.2786 29.6241 20.7727 29.6158 16.5005C29.608 12.2293 29.5899 11.7233 29.5096 10.0359C29.4359 8.47707 29.1741 7.62999 28.9538 7.06752C28.662 6.31946 28.3141 5.78862 27.7532 5.22925C27.1923 4.66989 26.6589 4.32514 25.9108 4.03588C25.3473 3.81763 24.4992 3.55945 22.9404 3.49155C21.2524 3.41742 20.7465 3.40237 16.4743 3.41068C12.2032 3.41897 11.6978 3.43607 10.0104 3.51592C8.45107 3.59004 7.60502 3.85183 7.041 4.07217C6.2945 4.36402 5.76262 4.71084 5.20328 5.27228C4.64494 5.83371 4.29917 6.36611 4.00992 7.1147C3.79324 7.67873 3.53246 8.52684 3.4656 10.0857C3.39197 11.7736 3.37644 12.2796 3.38473 16.5508C3.39251 20.8229 3.41065 21.3289 3.48997 23.0153C3.56306 24.5752 3.82691 25.4212 4.04621 25.9858C4.33806 26.7318 4.68592 27.2637 5.24631 27.823C5.80774 28.3803 6.34117 28.7271 7.08872 29.0164Z"
-                      fill="white"
-                    ></path>
-                  </svg>
+                    <span>Twitter</span>
+                  </a>
+                  <!-- discord -->
+                  <a href="#" id="discord">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="33"
+                      height="25"
+                      viewBox="0 0 33 25"
+                      fill="none"
+                    >
+                      <path
+                        d="M27.5894 2.06681C25.5498 1.13096 23.3626 0.441476 21.0759 0.0465784C21.0342 0.038957 20.9926 0.0580033 20.9712 0.0960968C20.6899 0.596383 20.3783 1.24905 20.1601 1.76204C17.7005 1.39381 15.2536 1.39381 12.8444 1.76204C12.6262 1.23765 12.3033 0.596383 12.0208 0.0960968C11.9993 0.0592743 11.9577 0.040228 11.9161 0.0465784C9.63055 0.440214 7.44341 1.1297 5.40258 2.06681C5.38491 2.07442 5.36977 2.08713 5.35972 2.10363C1.21119 8.30144 0.074733 14.3469 0.63224 20.3174C0.634763 20.3466 0.65116 20.3746 0.673864 20.3923C3.41095 22.4024 6.06228 23.6227 8.66437 24.4315C8.70602 24.4442 8.75014 24.429 8.77664 24.3947C9.39217 23.5541 9.94086 22.6678 10.4113 21.7358C10.4391 21.6812 10.4126 21.6164 10.3558 21.5948C9.48551 21.2647 8.6568 20.8622 7.85964 20.4051C7.79659 20.3682 7.79154 20.2781 7.84954 20.2349C8.0173 20.1092 8.18509 19.9784 8.34527 19.8463C8.37425 19.8222 8.41464 19.8171 8.44871 19.8324C13.6857 22.2234 19.3554 22.2234 24.5306 19.8324C24.5647 19.8159 24.6051 19.8209 24.6353 19.8451C24.7955 19.9771 24.9633 20.1092 25.1323 20.2349C25.1903 20.2781 25.1865 20.3682 25.1235 20.4051C24.3263 20.871 23.4976 21.2647 22.626 21.5936C22.5693 21.6152 22.544 21.6812 22.5718 21.7358C23.0523 22.6665 23.601 23.5528 24.2052 24.3934C24.2304 24.429 24.2758 24.4442 24.3175 24.4315C26.9322 23.6227 29.5835 22.4024 32.3206 20.3923C32.3446 20.3746 32.3597 20.3479 32.3622 20.3187C33.0294 13.4161 31.2447 7.42023 27.631 2.10489C27.6221 2.08713 27.607 2.07442 27.5894 2.06681ZM11.1934 16.682C9.61666 16.682 8.31751 15.2345 8.31751 13.4568C8.31751 11.6791 9.59147 10.2315 11.1934 10.2315C12.8078 10.2315 14.0944 11.6918 14.0692 13.4568C14.0692 15.2345 12.7952 16.682 11.1934 16.682ZM21.8263 16.682C20.2497 16.682 18.9505 15.2345 18.9505 13.4568C18.9505 11.6791 20.2244 10.2315 21.8263 10.2315C23.4408 10.2315 24.7274 11.6918 24.7022 13.4568C24.7022 15.2345 23.4408 16.682 21.8263 16.682Z"
+                        fill="white"
+                      ></path>
+                    </svg>
 
-                  <span>Instagram</span>
-                </a>
+                    <span>Discord</span>
+                  </a>
+                  <!-- instagram -->
+                  <a href="#" id="instagram">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="33"
+                      height="33"
+                      viewBox="0 0 33 33"
+                      fill="none"
+                    >
+                      <path
+                        d="M25.0269 9.88871C23.9673 9.89078 23.1057 9.03282 23.1037 7.97319C23.1016 6.91356 23.9596 6.05197 25.0197 6.0499C26.0798 6.04783 26.9414 6.9063 26.9435 7.96593C26.945 9.02556 26.087 9.88664 25.0269 9.88871Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M16.5153 24.7406C11.9788 24.7494 8.29347 21.0791 8.28467 16.5414C8.27584 12.0048 11.9471 8.31896 16.4837 8.31015C21.0212 8.30134 24.7071 11.9737 24.7159 16.5098C24.7247 21.0474 21.0523 24.7317 16.5153 24.7406ZM16.4894 11.193C13.5449 11.1982 11.1613 13.5907 11.1664 16.5357C11.1721 19.4813 13.5651 21.8644 16.5096 21.8587C19.4552 21.853 21.8388 19.4611 21.8331 16.5155C21.8274 13.5699 19.4344 11.1873 16.4894 11.193Z"
+                        fill="white"
+                      ></path>
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.99227 1.38785C7.00835 0.989713 8.17111 0.717029 9.87354 0.636677C11.5801 0.554776 12.125 0.536107 16.4692 0.527816C20.8144 0.519525 21.3592 0.536104 23.0658 0.61179C24.7688 0.685403 25.9321 0.953944 26.9502 1.34794C28.0036 1.75384 28.8973 2.30025 29.7879 3.18725C30.6786 4.07527 31.227 4.96591 31.6381 6.01775C32.0357 7.03487 32.3084 8.19662 32.3893 9.90011C32.4701 11.6062 32.4898 12.1505 32.4981 16.4953C32.5064 20.8395 32.4888 21.3849 32.4141 23.0925C32.34 24.7945 32.072 25.9583 31.678 26.9759C31.2711 28.0293 30.7257 28.9231 29.8387 29.8137C28.9517 30.7048 28.0601 31.2528 27.0083 31.6644C25.9911 32.0615 24.8294 32.3342 23.127 32.4156C21.4204 32.4965 20.8756 32.5156 16.5298 32.5239C12.1861 32.5322 11.6413 32.5156 9.93473 32.4405C8.23177 32.3658 7.06796 32.0978 6.05033 31.7043C4.99695 31.2969 4.10323 30.752 3.21261 29.8645C2.32148 28.977 1.77251 28.0858 1.36194 27.034C0.96381 26.0174 0.692143 24.8551 0.610764 23.1532C0.529381 21.4461 0.510207 20.9007 0.501919 16.5565C0.493599 12.2117 0.510716 11.6674 0.585356 9.96075C0.660533 8.25728 0.927516 7.09396 1.32151 6.07529C1.72844 5.0224 2.27379 4.12919 3.16182 3.23805C4.04881 2.34743 4.94044 1.7979 5.99227 1.38785ZM7.08872 29.0164C7.65325 29.2336 8.5003 29.4928 10.0602 29.5607C11.7481 29.6338 12.2535 29.6499 16.5246 29.6416C20.7973 29.6338 21.3028 29.6157 22.9901 29.5363C24.5485 29.4622 25.3955 29.1999 25.9585 28.9801C26.7055 28.6882 27.2374 28.3393 27.7962 27.78C28.355 27.2185 28.7008 26.6851 28.9901 25.9381C29.2078 25.373 29.4665 24.5254 29.5344 22.9655C29.6086 21.2786 29.6241 20.7727 29.6158 16.5005C29.608 12.2293 29.5899 11.7233 29.5096 10.0359C29.4359 8.47707 29.1741 7.62999 28.9538 7.06752C28.662 6.31946 28.3141 5.78862 27.7532 5.22925C27.1923 4.66989 26.6589 4.32514 25.9108 4.03588C25.3473 3.81763 24.4992 3.55945 22.9404 3.49155C21.2524 3.41742 20.7465 3.40237 16.4743 3.41068C12.2032 3.41897 11.6978 3.43607 10.0104 3.51592C8.45107 3.59004 7.60502 3.85183 7.041 4.07217C6.2945 4.36402 5.76262 4.71084 5.20328 5.27228C4.64494 5.83371 4.29917 6.36611 4.00992 7.1147C3.79324 7.67873 3.53246 8.52684 3.4656 10.0857C3.39197 11.7736 3.37644 12.2796 3.38473 16.5508C3.39251 20.8229 3.41065 21.3289 3.48997 23.0153C3.56306 24.5752 3.82691 25.4212 4.04621 25.9858C4.33806 26.7318 4.68592 27.2637 5.24631 27.823C5.80774 28.3803 6.34117 28.7271 7.08872 29.0164Z"
+                        fill="white"
+                      ></path>
+                    </svg>
+
+                    <span>Instagram</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
