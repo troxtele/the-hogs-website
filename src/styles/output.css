@@ -497,9 +497,6 @@
   .h-3 {
     height: calc(var(--spacing) * 3);
   }
-  .h-\[1\] {
-    height: 1;
-  }
   .h-\[5px\] {
     height: 5px;
   }
@@ -511,9 +508,6 @@
   }
   .h-\[55px\] {
     height: 55px;
-  }
-  .h-\[120px\] {
-    height: 120px;
   }
   .h-\[240px\] {
     height: 240px;
@@ -562,6 +556,15 @@
   }
   .w-\[16px\] {
     width: 16px;
+  }
+  .w-\[28px\] {
+    width: 28px;
+  }
+  .w-\[30px\] {
+    width: 30px;
+  }
+  .w-\[32px\] {
+    width: 32px;
   }
   .w-\[35px\] {
     width: 35px;
@@ -756,9 +759,6 @@
   }
   .gap-4 {
     gap: calc(var(--spacing) * 4);
-  }
-  .gap-5 {
-    gap: calc(var(--spacing) * 5);
   }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
@@ -1050,6 +1050,9 @@
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
   }
+  .pt-3 {
+    padding-top: calc(var(--spacing) * 3);
+  }
   .pt-5 {
     padding-top: calc(var(--spacing) * 5);
   }
@@ -1062,14 +1065,8 @@
   .pr-2\.5 {
     padding-right: calc(var(--spacing) * 2.5);
   }
-  .pr-3 {
-    padding-right: calc(var(--spacing) * 3);
-  }
   .pb-4 {
     padding-bottom: calc(var(--spacing) * 4);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
@@ -1178,6 +1175,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-0 {
+    opacity: 0%;
   }
   .opacity-12 {
     opacity: 12%;
@@ -1300,6 +1300,11 @@
       right: calc(30% * -1);
     }
   }
+  .exs\:w-\[35px\] {
+    @media (width >= 375px) {
+      width: 35px;
+    }
+  }
   .exs\:scale-80 {
     @media (width >= 375px) {
       --tw-scale-x: 80%;
@@ -1332,6 +1337,11 @@
   .xs\:right-4 {
     @media (width >= 475px) {
       right: calc(var(--spacing) * 4);
+    }
+  }
+  .xs\:w-\[35px\] {
+    @media (width >= 475px) {
+      width: 35px;
     }
   }
   .xs\:w-\[85vw\] {
@@ -1548,16 +1558,6 @@
         margin-block-start: calc(calc(var(--spacing) * 30) * var(--tw-space-y-reverse));
         margin-block-end: calc(calc(var(--spacing) * 30) * calc(1 - var(--tw-space-y-reverse)));
       }
-    }
-  }
-  .md\:px-4 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 4);
-    }
-  }
-  .md\:px-5 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 5);
     }
   }
   .md\:py-2\.5 {
