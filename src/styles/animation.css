@@ -83,7 +83,7 @@
 /* night */
 .night {
   opacity: 1;
-  animation: nightOpacity 20s linear infinite;
+  animation: nightOpacity 20s ease-in infinite;
 }
 
 @keyframes nightOpacity {
@@ -110,7 +110,7 @@
 .night-star {
   transform: translateX(-15);
   opacity: 1;
-  animation: nightStarTransform 20s linear infinite;
+  animation: nightStarTransform 20s ease-in infinite;
 }
 
 @keyframes nightStarTransform {
@@ -168,7 +168,7 @@
 /* day */
 .day {
   opacity: 0;
-  animation: dayOpacity 20s linear infinite;
+  animation: dayOpacity 20s ease-in infinite;
 }
 
 @keyframes dayOpacity {
@@ -280,7 +280,7 @@
 /* rain */
 .rainy {
   opacity: 0;
-  animation: rainOpacity 20s linear infinite;
+  animation: rainOpacity 20s ease-in infinite;
 }
 
 @keyframes rainOpacity {
@@ -331,7 +331,7 @@
 }
 .rain {
   opacity: 0;
-  animation: rainOpacity 20s linear infinite;
+  animation: rainOpacity 20s ease-in infinite;
 }
 
 @keyframes rainOpacity {
@@ -384,7 +384,7 @@
 /* snow */
 .snow {
   opacity: 0;
-  animation: snowOpacity 20s linear infinite;
+  animation: snowOpacity 20s ease-in infinite;
 }
 
 @keyframes snowOpacity {
@@ -407,7 +407,7 @@
 
 .snowflake {
   transform: translateY(-775px);
-  animation: snowfall 20s linear infinite;
+  animation: snowfall 20s ease-in infinite;
 }
 
 @keyframes snowfall {
@@ -430,7 +430,7 @@
 
 .snow-cap {
   opacity: 0;
-  animation: snowCapOpacity 20s linear infinite;
+  animation: snowCapOpacity 20s ease-in infinite;
 }
 
 @keyframes snowCapOpacity {
@@ -552,4 +552,78 @@
   }
 }
 
+/* behid animation */
+.hero-behind-bg .rainy {
+  opacity: 0;
+  animation: rainOpacity 20s ease-in infinite;
+}
 
+@keyframes rainOpacity {
+  0% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-behind-bg .day {
+  opacity: 0;
+  animation: dayOpacity 20s ease-in infinite;
+}
+
+@keyframes dayOpacity {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  22% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hero-behind-bg .snow {
+  opacity: 0;
+  animation: snowOpacity 20s ease-in infinite;
+}
+
+@keyframes snowOpacity {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
