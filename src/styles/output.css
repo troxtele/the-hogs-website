@@ -239,11 +239,17 @@
   .inset-x-0 {
     inset-inline: calc(var(--spacing) * 0);
   }
+  .-top-10 {
+    top: calc(var(--spacing) * -10);
+  }
   .-top-\[50px\] {
     top: calc(50px * -1);
   }
   .-top-\[70px\] {
     top: calc(70px * -1);
+  }
+  .-top-\[200px\] {
+    top: calc(200px * -1);
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
@@ -260,6 +266,9 @@
   .top-6 {
     top: calc(var(--spacing) * 6);
   }
+  .top-\[30px\] {
+    top: 30px;
+  }
   .top-\[55px\] {
     top: 55px;
   }
@@ -271,6 +280,9 @@
   }
   .top-\[145px\] {
     top: 145px;
+  }
+  .top-\[330px\] {
+    top: 330px;
   }
   .top-\[340px\] {
     top: 340px;
@@ -530,8 +542,8 @@
   .h-\[900px\] {
     height: 900px;
   }
-  .h-\[1300px\] {
-    height: 1300px;
+  .h-\[1250px\] {
+    height: 1250px;
   }
   .h-fit {
     height: fit-content;
@@ -1301,6 +1313,12 @@
       inset: calc(var(--spacing) * 0);
     }
   }
+  .after\:h-\[1350px\] {
+    &::after {
+      content: var(--tw-content);
+      height: 1350px;
+    }
+  }
   .after\:h-full {
     &::after {
       content: var(--tw-content);
@@ -1493,6 +1511,26 @@
     @media (width >= 40rem) {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
+    }
+  }
+  .md\:top-\[24px\] {
+    @media (width >= 48rem) {
+      top: 24px;
+    }
+  }
+  .md\:top-\[230px\] {
+    @media (width >= 48rem) {
+      top: 230px;
+    }
+  }
+  .md\:top-\[244px\] {
+    @media (width >= 48rem) {
+      top: 244px;
+    }
+  }
+  .md\:top-\[254px\] {
+    @media (width >= 48rem) {
+      top: 254px;
     }
   }
   .md\:top-\[264px\] {
@@ -1751,6 +1789,11 @@
       left: 509px;
     }
   }
+  .\32 xl\:h-\[1300px\] {
+    @media (width >= 96rem) {
+      height: 1300px;
+    }
+  }
   .\32 xl\:-translate-0 {
     @media (width >= 96rem) {
       --tw-translate-x: calc(var(--spacing) * -0);
@@ -1944,6 +1987,18 @@ body {
 @media screen and (min-width: 1680px) {
   .hero-behind-bg {
     display: block;
+  }
+}
+@media screen and (min-width: 2048px) {
+  main.hero {
+    height: 1350px;
+  }
+  .hero-behind-bg {
+    height: 1300px;
+    &::after {
+      content: var(--tw-content);
+      height: 1350px;
+    }
   }
 }
 .hog-wrapper .hog-up {

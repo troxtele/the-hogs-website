@@ -336,9 +336,9 @@
       </div>
     </header>
     <!-- hero -->
-    <main id="hero" class="hero relative overflow-hidden">
+    <main id="hero" class="hero relative overflow-hidden 2xl:h-[1300px]">
       <div
-        class="hero-behind-bg w-full h-[1300px] absolute top-0 left-0 right-0 after:absolute after:w-full after:h-full after:inset-0 after:backdrop-blur-xl"
+        class="hero-behind-bg w-full h-[1250px] absolute top-0 left-0 right-0 after:absolute after:w-full after:h-[1350px] after:inset-0 after:backdrop-blur-xl"
       >
         <!-- night -->
         <div class="night absolute inset-0 w-full h-full">
@@ -454,7 +454,9 @@
             />
           </div>
           <!-- day -->
-          <div class="day absolute inset-0 object-cover h-full">
+          <div
+            class="day absolute inset-0 object-cover max-h-[1032px] h-full overflow-hidden"
+          >
             <img
               class="day-bg object-cover max-h-[1032px] h-full absolute inset-0"
               src="./assets/images/hero/day-bg.webp"

@@ -133,6 +133,15 @@ body {
   }
 }
 
+@media screen and (min-width: 2048px) {
+  main.hero {
+    @apply h-[1350px];
+  }
+  .hero-behind-bg {
+    @apply h-[1300px] after:h-[1350px];
+  }
+}
+
 /* hog */
 .hog-wrapper .hog-up {
   @apply translate-0 opacity-100 transition-all duration-300;
