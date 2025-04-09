@@ -79,7 +79,7 @@ body {
 }
 
 .container {
-  @apply max-w-[1320px] w-full mx-auto px-4 md:px-8;
+  @apply max-w-[1380px] w-full mx-auto px-4 md:px-8;
 }
 
 .heading h2 {
@@ -153,6 +153,28 @@ body {
 /* woks */
 .woks p {
   @apply text-gunsmoke-300 font-outfit;
+}
+
+/* family */
+
+#family .card {
+  @apply rounded-2xl border p-3 space-y-4 h-full;
+}
+#family #card-1 {
+  box-shadow: 6px 6px 10px rgba(244, 144, 8, 0.25),
+    -5px -5px 10px rgba(244, 144, 8, 0.25);
+}
+#family #card-2 {
+  box-shadow: 6px 6px 10px rgba(95, 52, 42, 0.45),
+    -5px -5px 10px rgba(95, 52, 42, 0.45);
+}
+#family #card-3 {
+  box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.25);
+}
+#family #card-4 {
+  box-shadow: 6px 6px 10px rgba(255, 255, 255, 0.25),
+    -5px -5px 10px rgba(255, 255, 255, 0.25);
 }
 
 /* traits */
